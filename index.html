@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,28 +8,527 @@
   <meta name="description" content="รวมลิงก์ข่าวสารและบริการออนไลน์ของมหาวิทยาลัยราชภัฏนครปฐม">
   <title>ข่าวสารและบริการออนไลน์ | NPRU</title>
   <style>
-    :root{color-scheme:light;--navy:#102b48;--ink:#19334c;--muted:#5d7185;--blue:#145b9b;--sky:#eaf5fc;--line:#d9e6ef;--white:#fff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans Thai",Tahoma,Arial,sans-serif;color:var(--ink);background:#f4f8fb;line-height:1.65}
-    a{color:inherit}a:focus-visible{outline:3px solid #ffca5c;outline-offset:4px}
-    .top{background:var(--navy);color:white}.bar{max-width:1140px;margin:auto;min-height:70px;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:.02em;font-size:1.1rem}.brand span{color:#81d6ec}.bar small{color:#bed5e4;font-size:.88rem}
-    .hero{background:linear-gradient(118deg,#102b48 0%,#155b86 73%,#277c9e 100%);color:white;padding:72px 24px 83px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid #ffffff3a;border-radius:50%;right:-90px;top:-240px;box-shadow:0 0 0 70px #ffffff09,0 0 0 140px #ffffff08;pointer-events:none}.hero-inner{max-width:1140px;margin:auto;position:relative;z-index:1}.eyebrow{font-size:.85rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a9dce9;margin:0 0 12px}.hero h1{font-size:clamp(2rem,4.7vw,3.5rem);line-height:1.25;margin:0 0 14px;max-width:800px}.hero p:last-child{font-size:1.08rem;color:#d7e9f3;margin:0;max-width:660px}
-    main{max-width:1140px;margin:-39px auto 76px;padding:0 24px;position:relative;z-index:2}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:0 0 20px}.section-head h2{font-size:1.35rem;margin:0}.section-head span{color:var(--muted);font-size:.91rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;min-height:210px;box-shadow:0 12px 32px #102b480b;transition:transform .2s,box-shadow .2s,border-color .2s;text-decoration:none}.card:hover{transform:translateY(-4px);border-color:#a6cbdf;box-shadow:0 18px 40px #102b481a}.card.featured{grid-column:1/-1;min-height:220px}.illustration{width:142px;flex:0 0 142px;display:grid;place-items:center;background:#e6f3fa;color:#17659a}.illustration svg{width:72px;height:72px;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;fill:none}.featured .illustration{width:205px;flex-basis:205px;background:#e5f3f3;color:#127f86}.card:nth-child(3) .illustration{background:#eef0fc;color:#5364ad}.card:nth-child(4) .illustration{background:#fff3e5;color:#af7021}.card:nth-child(5) .illustration{background:#eaf6ee;color:#328058}.content{padding:27px 27px 25px;display:flex;flex-direction:column;align-items:flex-start;min-width:0}.tag{display:inline-block;color:#17649a;background:#eaf4fa;border-radius:100px;padding:3px 10px;font-size:.79rem;font-weight:700;margin-bottom:10px}.featured .tag{background:#e5f5f2;color:#14756e}.content h3{font-size:1.22rem;line-height:1.38;margin:0 0 7px}.featured h3{font-size:1.48rem}.content p{color:var(--muted);margin:0 0 16px;font-size:.94rem}.action{margin-top:auto;color:#125e97;font-weight:700;font-size:.94rem}.action:after{content:" ↗";font-size:1.1em}footer{background:#eaf1f6;text-align:center;padding:24px;color:#526a7d;font-size:.88rem}
-    @media(max-width:760px){.hero{padding:54px 20px 72px}.bar{padding:13px 20px}.bar small{display:none}main{padding:0 16px}.grid{grid-template-columns:1fr}.card.featured{grid-column:auto}.card,.card.featured{min-height:0}.illustration,.featured .illustration{width:116px;flex-basis:116px}.illustration svg{width:58px;height:58px}.content{padding:21px}.featured h3{font-size:1.22rem}}
-    @media(max-width:480px){.card,.card.featured{display:block}.illustration,.featured .illustration{height:100px;width:100%}.illustration svg{width:51px;height:51px}.content{padding:20px}.section-head{align-items:start;flex-direction:column;gap:2px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
-    .confirm-dialog{border:0;border-radius:20px;padding:0;width:min(92vw,460px);color:var(--ink);box-shadow:0 24px 70px #071d3480}.confirm-dialog::backdrop{background:#071d34a8}.dialog-body{padding:30px}.dialog-icon{width:50px;height:50px;display:grid;place-items:center;border-radius:14px;background:#e6f3fa;color:#17649a;font-size:1.5rem}.dialog-body h2{font-size:1.38rem;margin:16px 0 5px}.dialog-body p{margin:0 0 10px;color:var(--muted)}.dialog-url{display:block;overflow-wrap:anywhere;color:#125e97;font-size:.9rem}.dialog-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:25px}.dialog-actions button,.dialog-actions a{font:inherit;font-weight:700;padding:10px 17px;border-radius:10px;text-decoration:none;cursor:pointer}.cancel-button{background:#fff;border:1px solid var(--line);color:var(--ink)}.visit-button{background:#145b9b;border:1px solid #145b9b;color:white}.dialog-actions :is(button,a):focus-visible{outline:3px solid #ffca5c;outline-offset:3px}
+    :root {
+      color-scheme: light;
+      --navy: #102b48;
+      --ink: #19334c;
+      --muted: #5d7185;
+      --blue: #145b9b;
+      --sky: #eaf5fc;
+      --line: #d9e6ef;
+      --white: #fff
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans Thai", Tahoma, Arial, sans-serif;
+      color: var(--ink);
+      background: #f4f8fb;
+      line-height: 1.65
+    }
+
+    a {
+      color: inherit
+    }
+
+    a:focus-visible {
+      outline: 3px solid #ffca5c;
+      outline-offset: 4px
+    }
+
+    .top {
+      background: var(--navy);
+      color: white
+    }
+
+    .bar {
+      max-width: 1140px;
+      margin: auto;
+      min-height: 70px;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: .02em;
+      font-size: 1.1rem
+    }
+
+    .brand span {
+      color: #81d6ec
+    }
+
+    .bar small {
+      color: #bed5e4;
+      font-size: .88rem
+    }
+
+    .hero {
+      background: linear-gradient(118deg, #102b48 0%, #155b86 73%, #277c9e 100%);
+      color: white;
+      padding: 72px 24px 83px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .hero:after {
+      content: "";
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      border: 1px solid #ffffff3a;
+      border-radius: 50%;
+      right: -90px;
+      top: -240px;
+      box-shadow: 0 0 0 70px #ffffff09, 0 0 0 140px #ffffff08;
+      pointer-events: none
+    }
+
+    .hero-inner {
+      max-width: 1140px;
+      margin: auto;
+      position: relative;
+      z-index: 1
+    }
+
+    .eyebrow {
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      color: #a9dce9;
+      margin: 0 0 12px
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4.7vw, 3.5rem);
+      line-height: 1.25;
+      margin: 0 0 14px;
+      max-width: 800px
+    }
+
+    .hero p:last-child {
+      font-size: 1.08rem;
+      color: #d7e9f3;
+      margin: 0;
+      max-width: 660px
+    }
+
+    main {
+      max-width: 1140px;
+      margin: -39px auto 76px;
+      padding: 0 24px;
+      position: relative;
+      z-index: 2
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 0 0 20px
+    }
+
+    .section-head h2 {
+      font-size: 1.35rem;
+      margin: 0
+    }
+
+    .section-head span {
+      color: var(--muted);
+      font-size: .91rem
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      display: flex;
+      min-height: 210px;
+      box-shadow: 0 12px 32px #102b480b;
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+      text-decoration: none
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #a6cbdf;
+      box-shadow: 0 18px 40px #102b481a
+    }
+
+    .card.featured {
+      grid-column: 1/-1;
+      min-height: 220px
+    }
+
+    .illustration {
+      width: 142px;
+      flex: 0 0 142px;
+      display: grid;
+      place-items: center;
+      background: #e6f3fa;
+      color: #17659a
+    }
+
+    .illustration svg {
+      width: 72px;
+      height: 72px;
+      stroke: currentColor;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none
+    }
+
+    .featured .illustration {
+      width: 205px;
+      flex-basis: 205px;
+      background: #e5f3f3;
+      color: #127f86
+    }
+
+    .card:nth-child(3) .illustration {
+      background: #eef0fc;
+      color: #5364ad
+    }
+
+    .card:nth-child(4) .illustration {
+      background: #fff3e5;
+      color: #af7021
+    }
+
+    .card:nth-child(5) .illustration {
+      background: #eaf6ee;
+      color: #328058
+    }
+
+    .content {
+      padding: 27px 27px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-width: 0
+    }
+
+    .tag {
+      display: inline-block;
+      color: #17649a;
+      background: #eaf4fa;
+      border-radius: 100px;
+      padding: 3px 10px;
+      font-size: .79rem;
+      font-weight: 700;
+      margin-bottom: 10px
+    }
+
+    .featured .tag {
+      background: #e5f5f2;
+      color: #14756e
+    }
+
+    .content h3 {
+      font-size: 1.22rem;
+      line-height: 1.38;
+      margin: 0 0 7px
+    }
+
+    .featured h3 {
+      font-size: 1.48rem
+    }
+
+    .content p {
+      color: var(--muted);
+      margin: 0 0 16px;
+      font-size: .94rem
+    }
+
+    .action {
+      margin-top: auto;
+      color: #125e97;
+      font-weight: 700;
+      font-size: .94rem
+    }
+
+    .action:after {
+      content: " ↗";
+      font-size: 1.1em
+    }
+
+    footer {
+      background: #eaf1f6;
+      text-align: center;
+      padding: 24px;
+      color: #526a7d;
+      font-size: .88rem
+    }
+
+    @media(max-width:760px) {
+      .hero {
+        padding: 54px 20px 72px
+      }
+
+      .bar {
+        padding: 13px 20px
+      }
+
+      .bar small {
+        display: none
+      }
+
+      main {
+        padding: 0 16px
+      }
+
+      .grid {
+        grid-template-columns: 1fr
+      }
+
+      .card.featured {
+        grid-column: auto
+      }
+
+      .card,
+      .card.featured {
+        min-height: 0
+      }
+
+      .illustration,
+      .featured .illustration {
+        width: 116px;
+        flex-basis: 116px
+      }
+
+      .illustration svg {
+        width: 58px;
+        height: 58px
+      }
+
+      .content {
+        padding: 21px
+      }
+
+      .featured h3 {
+        font-size: 1.22rem
+      }
+    }
+
+    @media(max-width:480px) {
+
+      .card,
+      .card.featured {
+        display: block
+      }
+
+      .illustration,
+      .featured .illustration {
+        height: 100px;
+        width: 100%
+      }
+
+      .illustration svg {
+        width: 51px;
+        height: 51px
+      }
+
+      .content {
+        padding: 20px
+      }
+
+      .section-head {
+        align-items: start;
+        flex-direction: column;
+        gap: 2px
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+
+      .card {
+        transition: none
+      }
+    }
+
+    .confirm-dialog {
+      border: 0;
+      border-radius: 20px;
+      padding: 0;
+      width: min(92vw, 460px);
+      color: var(--ink);
+      box-shadow: 0 24px 70px #071d3480
+    }
+
+    .confirm-dialog::backdrop {
+      background: #071d34a8
+    }
+
+    .dialog-body {
+      padding: 30px
+    }
+
+    .dialog-icon {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: #e6f3fa;
+      color: #17649a;
+      font-size: 1.5rem
+    }
+
+    .dialog-body h2 {
+      font-size: 1.38rem;
+      margin: 16px 0 5px
+    }
+
+    .dialog-body p {
+      margin: 0 0 10px;
+      color: var(--muted)
+    }
+
+    .dialog-url {
+      display: block;
+      overflow-wrap: anywhere;
+      color: #125e97;
+      font-size: .9rem
+    }
+
+    .dialog-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 25px
+    }
+
+    .dialog-actions button,
+    .dialog-actions a {
+      font: inherit;
+      font-weight: 700;
+      padding: 10px 17px;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer
+    }
+
+    .cancel-button {
+      background: #fff;
+      border: 1px solid var(--line);
+      color: var(--ink)
+    }
+
+    .visit-button {
+      background: #145b9b;
+      border: 1px solid #145b9b;
+      color: white
+    }
+
+    .dialog-actions :is(button, a):focus-visible {
+      outline: 3px solid #ffca5c;
+      outline-offset: 3px
+    }
   </style>
 </head>
+
 <body>
-  <header class="top"><div class="bar"><div class="brand">NPRU <span>·</span> News &amp; Resources</div><small>มหาวิทยาลัยราชภัฏนครปฐม</small></div></header>
-  <section class="hero" aria-labelledby="page-title"><div class="hero-inner"><p class="eyebrow">Nakhon Pathom Rajabhat University</p><h1 id="page-title">ข่าวสารและบริการออนไลน์</h1><p>เข้าถึงช่องทางสมัครเรียน สื่อการเรียนรู้ และฐานข้อมูลของมหาวิทยาลัยได้จากหน้านี้</p></div></section>
-  <main><div class="section-head"><h2>ลิงก์ที่เกี่ยวข้อง</h2><span>เลือกบริการที่ต้องการใช้งาน</span></div>
+  <header class="top">
+    <div class="bar">
+      <div class="brand">NPRU <span>·</span> News &amp; Resources</div><small>Udsanee Pakdeetrakulwong</small>
+    </div>
+  </header>
+  <section class="hero" aria-labelledby="page-title">
+    <div class="hero-inner">
+      <p class="eyebrow">Nakhon Pathom Rajabhat University</p>
+      <h1 id="page-title">ข่าวสารและบริการออนไลน์</h1>
+      <p>เข้าถึงช่องทางสมัครเรียน สื่อการเรียนรู้ และฐานข้อมูลของมหาวิทยาลัยได้จากหน้านี้</p>
+    </div>
+  </section>
+  <main>
+    <div class="section-head">
+      <h2>ลิงก์ที่เกี่ยวข้อง</h2><span>เลือกบริการที่ต้องการใช้งาน</span>
+    </div>
     <div class="grid">
-      <a class="card featured" href="https://admission.npru.ac.th/" target="_blank" rel="noopener noreferrer" aria-label="ข้อมูลการรับสมัครนักศึกษาใหม่ ปีการศึกษา 2570 มหาวิทยาลัยราชภัฏนครปฐม เปิดในแท็บใหม่"><div class="illustration"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M8 26 40 12l32 14-32 14L8 26Z"/><path d="M20 32v16c0 8 12 15 20 15s20-7 20-15V32M72 26v24"/><circle cx="72" cy="54" r="3"/></svg></div><div class="content"><span class="tag">ข่าวประชาสัมพันธ์</span><h3>ข้อมูลการรับสมัครนักศึกษาใหม่ ปีการศึกษา 2570 มหาวิทยาลัยราชภัฏนครปฐม</h3><p>ตรวจสอบกำหนดการ คุณสมบัติ และรายละเอียดการสมัครเข้าศึกษาต่อ</p><span class="action">ดูข้อมูลการรับสมัคร</span></div></a>
-      <a class="card" href="https://short.npru.ac.th/login" target="_blank" rel="noopener noreferrer" aria-label="ระบบย่อลิงก์ มหาวิทยาลัยราชภัฏนครปฐม เปิดในแท็บใหม่"><div class="illustration"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="m34 46 12-12M27 31l-8 8a12 12 0 0 0 17 17l8-8M53 49l8-8a12 12 0 0 0-17-17l-8 8"/></svg></div><div class="content"><span class="tag">เครื่องมือออนไลน์</span><h3>ระบบย่อลิงก์ มหาวิทยาลัยราชภัฏนครปฐม</h3><p>บริการสร้างและจัดการลิงก์แบบย่อสำหรับการเผยแพร่ข้อมูล</p><span class="action">เข้าสู่ระบบย่อลิงก์</span></div></a>
-      <a class="card" href="http://courseware.npru.ac.th/" target="_blank" rel="noopener noreferrer" aria-label="ระบบสื่อการเรียนการสอนออนไลน์ มหาวิทยาลัยราชภัฏนครปฐม เปิดในแท็บใหม่"><div class="illustration"><svg viewBox="0 0 80 80" aria-hidden="true"><rect x="11" y="15" width="58" height="42" rx="4"/><path d="M31 65h18M40 57v8M34 27l16 9-16 9V27Z"/></svg></div><div class="content"><span class="tag">สื่อการเรียนรู้</span><h3>ระบบสื่อการเรียนการสอนออนไลน์ มหาวิทยาลัยราชภัฏนครปฐม</h3><p>ศึกษาบทเรียนและสื่อประกอบการเรียนการสอนในรูปแบบออนไลน์</p><span class="action">เข้าสู่ระบบสื่อการเรียนการสอน</span></div></a>
-      <a class="card" href="https://e-book.npru.ac.th/" target="_blank" rel="noopener noreferrer" aria-label="ระบบหนังสืออิเล็กทรอนิกส์ มหาวิทยาลัยราชภัฏนครปฐม เปิดในแท็บใหม่"><div class="illustration"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M40 62c-8-6-18-8-29-7V17c12-1 22 1 29 7 7-6 17-8 29-7v38c-11-1-21 1-29 7ZM40 24v38M18 27c6 0 11 1 16 4M46 31c5-3 10-4 16-4M18 37c6 0 11 1 16 4M46 41c5-3 10-4 16-4"/></svg></div><div class="content"><span class="tag">หนังสืออิเล็กทรอนิกส์</span><h3>ระบบหนังสืออิเล็กทรอนิกส์ มหาวิทยาลัยราชภัฏนครปฐม</h3><p>สืบค้นและอ่านหนังสืออิเล็กทรอนิกส์เพื่อการศึกษา</p><span class="action">เข้าสู่ระบบหนังสืออิเล็กทรอนิกส์</span></div></a>
-      <a class="card" href="https://tlo.npru.ac.th/" target="_blank" rel="noopener noreferrer" aria-label="ฐานข้อมูลงานวิจัย สิ่งประดิษฐ์ และบริการวิชาการ เปิดในแท็บใหม่"><div class="illustration"><svg viewBox="0 0 80 80" aria-hidden="true"><rect x="13" y="16" width="43" height="50" rx="4"/><path d="M23 29h23M23 39h16M23 49h13M56 52l12 12M64 43a11 11 0 1 1-22 0 11 11 0 0 1 22 0Z"/></svg></div><div class="content"><span class="tag">วิจัยและบริการวิชาการ</span><h3>ฐานข้อมูลงานวิจัย สิ่งประดิษฐ์ และบริการวิชาการ</h3><p>สืบค้นข้อมูลผลงานวิจัย สิ่งประดิษฐ์ และการดำเนินงานด้านบริการวิชาการ</p><span class="action">เข้าสู่ฐานข้อมูล</span></div></a>
+      <a class="card featured" href="https://admission.npru.ac.th/" target="_blank" rel="noopener noreferrer"
+        aria-label="ข้อมูลการรับสมัครนักศึกษาใหม่ ปีการศึกษา 2570 มหาวิทยาลัยราชภัฏนครปฐม เปิดในแท็บใหม่">
+        <div class="illustration"><svg viewBox="0 0 80 80" aria-hidden="true">
+            <path d="M8 26 40 12l32 14-32 14L8 26Z" />
+            <path d="M20 32v16c0 8 12 15 20 15s20-7 20-15V32M72 26v24" />
+            <circle cx="72" cy="54" r="3" />
+          </svg></div>
+        <div class="content"><span class="tag">ข่าวประชาสัมพันธ์</span>
+          <h3>ข้อมูลการรับสมัครนักศึกษาใหม่ ปีการศึกษา 2570 มหาวิทยาลัยราชภัฏนครปฐม</h3>
+          <p>ตรวจสอบกำหนดการ คุณสมบัติ และรายละเอียดการสมัครเข้าศึกษาต่อ</p><span
+            class="action">ดูข้อมูลการรับสมัคร</span>
+        </div>
+      </a>
+      <a class="card" href="https://short.npru.ac.th/login" target="_blank" rel="noopener noreferrer"
+        aria-label="NPRU Link Shortener เปิดในแท็บใหม่">
+        <div class="illustration"><svg viewBox="0 0 80 80" aria-hidden="true">
+            <path d="m34 46 12-12M27 31l-8 8a12 12 0 0 0 17 17l8-8M53 49l8-8a12 12 0 0 0-17-17l-8 8" />
+          </svg></div>
+        <div class="content"><span class="tag">เครื่องมือออนไลน์</span>
+          <h3>NPRU Link Shortener</h3>
+          <p>บริการสร้างและจัดการลิงก์แบบย่อสำหรับการเผยแพร่ข้อมูล</p><span class="action">เข้าสู่ระบบย่อลิงก์</span>
+        </div>
+      </a>
+      <a class="card" href="http://courseware.npru.ac.th/" target="_blank" rel="noopener noreferrer"
+        aria-label="NPRU Courseware เปิดในแท็บใหม่">
+        <div class="illustration"><svg viewBox="0 0 80 80" aria-hidden="true">
+            <rect x="11" y="15" width="58" height="42" rx="4" />
+            <path d="M31 65h18M40 57v8M34 27l16 9-16 9V27Z" />
+          </svg></div>
+        <div class="content"><span class="tag">สื่อการเรียนรู้</span>
+          <h3>NPRU Courseware</h3>
+          <p>ศึกษาบทเรียนและสื่อประกอบการเรียนการสอนในรูปแบบออนไลน์</p><span
+            class="action">เข้าสู่ระบบสื่อการเรียนการสอน</span>
+        </div>
+      </a>
+      <a class="card" href="https://e-book.npru.ac.th/" target="_blank" rel="noopener noreferrer"
+        aria-label="NPRU E-Book เปิดในแท็บใหม่">
+        <div class="illustration"><svg viewBox="0 0 80 80" aria-hidden="true">
+            <path
+              d="M40 62c-8-6-18-8-29-7V17c12-1 22 1 29 7 7-6 17-8 29-7v38c-11-1-21 1-29 7ZM40 24v38M18 27c6 0 11 1 16 4M46 31c5-3 10-4 16-4M18 37c6 0 11 1 16 4M46 41c5-3 10-4 16-4" />
+          </svg></div>
+        <div class="content"><span class="tag">หนังสืออิเล็กทรอนิกส์</span>
+          <h3>NPRU E-Book</h3>
+          <p>สืบค้นและอ่านหนังสืออิเล็กทรอนิกส์เพื่อการศึกษา</p><span
+            class="action">เข้าสู่ระบบหนังสืออิเล็กทรอนิกส์</span>
+        </div>
+      </a>
+      <a class="card" href="https://tlo.npru.ac.th/" target="_blank" rel="noopener noreferrer"
+        aria-label="ฐานข้อมูลงานวิจัย สิ่งประดิษฐ์ และบริการวิชาการ เปิดในแท็บใหม่">
+        <div class="illustration"><svg viewBox="0 0 80 80" aria-hidden="true">
+            <rect x="13" y="16" width="43" height="50" rx="4" />
+            <path d="M23 29h23M23 39h16M23 49h13M56 52l12 12M64 43a11 11 0 1 1-22 0 11 11 0 0 1 22 0Z" />
+          </svg></div>
+        <div class="content"><span class="tag">วิจัยและบริการวิชาการ</span>
+          <h3>ฐานข้อมูลงานวิจัย สิ่งประดิษฐ์ และบริการวิชาการ</h3>
+          <p>สืบค้นข้อมูลผลงานวิจัย สิ่งประดิษฐ์ และการดำเนินงานด้านบริการวิชาการ</p><span
+            class="action">เข้าสู่ฐานข้อมูล</span>
+        </div>
+      </a>
     </div>
   </main>
   <footer>มหาวิทยาลัยราชภัฏนครปฐม · รวมช่องทางเข้าถึงบริการออนไลน์</footer>
@@ -41,7 +541,8 @@
       <span class="dialog-url" id="destination-url"></span>
       <div class="dialog-actions">
         <button class="cancel-button" type="button" id="cancel-link">ยกเลิก</button>
-        <a class="visit-button" id="confirm-link" href="#" target="_blank" rel="noopener noreferrer">ยืนยันและเข้าสู่เว็บไซต์</a>
+        <a class="visit-button" id="confirm-link" href="#" target="_blank"
+          rel="noopener noreferrer">ยืนยันและเข้าสู่เว็บไซต์</a>
       </div>
     </div>
   </dialog>
@@ -104,4 +605,5 @@
     });
   </script>
 </body>
+
 </html>
